@@ -1,7 +1,6 @@
 'use server';
 
 import { db , auth} from "@/firebase/admin";
-import { DocumentData } from "firebase/firestore";
 import { cookies } from "next/headers";
 
 const SESSION_DURATION = 60 * 60 * 24 * 7;
