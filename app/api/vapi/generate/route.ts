@@ -12,12 +12,6 @@ export async function GET() {
 export async function POST(request: Request) {
     const { type, role, level, techstack, amount, userid } = await request.json();
 
-    // if (!type || !role || !level || !techstack || !amount || !userid) {
-    //     return Response.json(
-    //       { success: false, error: "Missing required fields" },
-    //       { status: 400 }
-    //     );
-    //   }
 
     try {
         const { text: questions } = await generateText({
